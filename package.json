@@ -2,6 +2,7 @@
   "name": "rickandmortyapi-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mrgio7.github.io/rickandmortyapi-test",
   "dependencies": {
     "@apollo/client": "^3.5.7",
     "@emotion/react": "^11.7.1",
@@ -11,19 +12,24 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-react-app": "6",
+    "gh-pages": "^3.2.3",
     "graphql": "^16.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.48.0",
+    "standard": "^16.0.4",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
