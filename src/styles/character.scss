@@ -1,0 +1,58 @@
+@use "./variables" as *;
+
+.character {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+
+  .avatarContainer {
+    position: relative;
+    .avatar {
+      width: 100%;
+    }
+
+    .editAvatar {
+      position: absolute;
+      width: 25px;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .likeBtn {
+      width: 25px;
+    }
+  }
+
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2rem;
+  }
+  .MuiPaper-root{
+      width: 100% !important;
+  }
+}
+
+@media (max-width: $desktop) {
+  .character {
+    width: 50%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .character {
+    width: 80%;
+  }
+}

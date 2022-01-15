@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.MuiTable-root {
+  width: 50% !important;
+  margin: 30px auto;
+}
+
+@media (max-width: $desktop) {
+  .MuiTable-root {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: $mobile) {
+  .MuiTable-root {
+    width: 90% !important;
+  }
+}

@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    color:black
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.likeBtn {
+    cursor: pointer;
+}
+
+header{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
