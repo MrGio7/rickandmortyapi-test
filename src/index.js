@@ -10,7 +10,7 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
-  <BrowserRouter basename="rickandmortyapi-test">
+  <BrowserRouter basename="/rickandmortyapi-test">
     <ApolloProvider client={client}>
       <App />
     </ApolloProvider>
