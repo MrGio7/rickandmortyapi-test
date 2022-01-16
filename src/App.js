@@ -1,5 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import { Characters, Character, Search, Navigation, Liked } from "./components";
+import {
+  Characters,
+  Character,
+  Search,
+  Navigation,
+  Liked,
+  FacebookLogin,
+} from "./components";
 import "./styles/app.scss";
 
 function App() {

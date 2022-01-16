@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .MuiButtonBase-root{
+        padding: 6px 8px;
+    }
+
+    .MuiButton-root{
+        color: black;
+    }
+}

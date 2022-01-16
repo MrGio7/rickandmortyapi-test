@@ -1,16 +1,21 @@
 import React from "react";
-import { Button, ButtonGroup } from "@mui/material";
+import { Button, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
+import FacebookLogin from "./FacebookLogin";
+import "../styles/navigation.scss";
 
 export default function Navigation() {
   return (
-    <ButtonGroup variant="text" aria-label="text button group">
+    <nav>
       <Button>
         <Link to="/">Home</Link>
       </Button>
+      <Divider orientation="vertical" flexItem />
       <Button>
         <Link to="/liked">Liked</Link>
       </Button>
-    </ButtonGroup>
+      <Divider orientation="vertical" flexItem />
+      <FacebookLogin />
+    </nav>
   );
 }
