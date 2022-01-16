@@ -9,10 +9,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 import editSVG from "../assets/edit.svg";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
-export default function FormDialog({ id }) {
+export default function FormDialog({ id, image, setImage }) {
   const [open, setOpen] = React.useState(false);
   const [input, setInput] = React.useState("");
-  const [image, setImage] = useLocalStorage("images", "");
 
   return (
     <div>
@@ -43,6 +42,15 @@ export default function FormDialog({ id }) {
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpen(false)}>Cancel</Button>
+          <Button
+            onClick={() => {
+              delete image[id];
+              setImage({ ...image });
+              setOpen(false);
+            }}
+          >
+            Original
+          </Button>
           <Button
             onClick={() => {
               if (input.trim() !== "") {

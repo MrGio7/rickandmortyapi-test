@@ -18,7 +18,7 @@ import "../styles/character.scss";
 export default function Character() {
   const { characterId } = useParams();
   const [like, setLike] = useLocalStorage("likes", "");
-  const [images, setImage] = useLocalStorage("images", "");
+  const [images, setImages] = useLocalStorage("images", "");
   const { error, loading, data } = useQuery(LOAD_CHARACTER, {
     variables: { id: characterId },
   });
@@ -36,7 +36,7 @@ export default function Character() {
         ) : (
           <img src={image} alt={name} className="avatar" />
         )}
-        <FormDialog id={characterId} />
+        <FormDialog id={characterId} image={images} setImage={setImages} />
       </div>
       <div className="name">
         <h3>{name}</h3>
